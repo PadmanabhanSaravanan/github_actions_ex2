@@ -10,6 +10,8 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: static-site
+    - name: View content
+      run: ls -R
 
   build-project:
     name: Build Project
